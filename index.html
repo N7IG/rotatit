@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rotateit</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <canvas width=700 height=700 onclick="canvasClick(event)"></canvas>
+    <button id="set-line" onclick="setLine()">SET LINE</button>
+    <button id="set-center" onclick="setCenter()">SET CENTER</button>
+    <button id="run" onclick="run()">RUN</button>
+    <div class="liest">
+        Lines List:
+        <div id="plist"></div>
+    </div>
+
+    <script src="./utils/calculate-relative-coordinates.js"></script>
+    <script src="./utils/calculate-actual-coordinates.js"></script>
+    <script src="./utils/cartesian-to-spherical.mapper.js"></script>
+    <script src="./utils/rotate-point.js"></script>
+    <script src="./utils/spherical-to-cartesian.mapper.js"></script>
+    <script src="./utils/draw-line.js"></script>
+    <script src="./utils/draw-circle.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
