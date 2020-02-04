@@ -1,7 +1,7 @@
 const arcList = [];
 let centerPoint = { x: 300, y: 300 };
-const deltaPhi = 0.09;
-const interval = 100;
+const deltaPhi = 0.04;
+const interval = 30;
 
 let globalPhi = deltaPhi;
 let setArcStage = 0; // 0 - default; 1 - ready to set 1st point; 2 - ready to set 2nd point;
